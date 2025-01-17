@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="SevenAppsCase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6Z-Ob-mvU">
+                        <rect key="frame" x="15" y="10" width="290" height="100"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jck-1v-3rr">
+                                <rect key="frame" x="20" y="20" width="250" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymc-Vi-iMp">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="27.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TX-hK-cm7">
+                                        <rect key="frame" x="0.0" y="37.666666666666671" width="250" height="22.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" systemColor="tableBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47058823529411764" green="0.45098039215686275" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Jck-1v-3rr" secondAttribute="bottom" constant="20" id="6WZ-wS-3Ij"/>
+                            <constraint firstItem="Jck-1v-3rr" firstAttribute="leading" secondItem="V6Z-Ob-mvU" secondAttribute="leading" constant="20" id="KAZ-oL-jOP"/>
+                            <constraint firstItem="Jck-1v-3rr" firstAttribute="top" secondItem="V6Z-Ob-mvU" secondAttribute="top" constant="20" id="Q9T-nf-ysk"/>
+                            <constraint firstAttribute="trailing" secondItem="Jck-1v-3rr" secondAttribute="trailing" constant="20" id="zyd-5w-AQ3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="V6Z-Ob-mvU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="AZw-X2-6xM"/>
+                    <constraint firstItem="V6Z-Ob-mvU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="It8-I9-sHP"/>
+                    <constraint firstAttribute="bottom" secondItem="V6Z-Ob-mvU" secondAttribute="bottom" constant="10" id="Vou-FG-zeD"/>
+                    <constraint firstAttribute="trailing" secondItem="V6Z-Ob-mvU" secondAttribute="trailing" constant="15" id="Zw3-Wm-2LO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="V6Z-Ob-mvU" id="hqI-6w-W5U"/>
+                <outlet property="emailLabel" destination="5TX-hK-cm7" id="hkQ-zZ-qKK"/>
+                <outlet property="nameLabel" destination="ymc-Vi-iMp" id="DfO-Qq-us6"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="tableBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FD09F74C2D3A7AF300824EC0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD09F74B2D3A7AF300824EC0 /* XCTest.framework */; platformFilter = ios; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FD09F6E02D39A75D00824EC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,13 +31,14 @@
 		FD09F6C92D39A75B00824EC0 /* SevenAppsCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SevenAppsCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD09F6DF2D39A75D00824EC0 /* SevenAppsCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SevenAppsCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD09F6E92D39A75D00824EC0 /* SevenAppsCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SevenAppsCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD09F74B2D3A7AF300824EC0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		FD09F6F12D39A75D00824EC0 /* Exceptions for "SevenAppsCase" folder in "SevenAppsCase" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resource/Info.plist,
 			);
 			target = FD09F6C82D39A75B00824EC0 /* SevenAppsCase */;
 		};
@@ -72,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD09F74C2D3A7AF300824EC0 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +97,7 @@
 				FD09F6CB2D39A75B00824EC0 /* SevenAppsCase */,
 				FD09F6E22D39A75D00824EC0 /* SevenAppsCaseTests */,
 				FD09F6EC2D39A75D00824EC0 /* SevenAppsCaseUITests */,
+				FD09F74A2D3A7AF200824EC0 /* Frameworks */,
 				FD09F6CA2D39A75B00824EC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +110,14 @@
 				FD09F6E92D39A75D00824EC0 /* SevenAppsCaseUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FD09F74A2D3A7AF200824EC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD09F74B2D3A7AF300824EC0 /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,12 +306,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A9HQBNS9TX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SevenAppsCase/Info.plist;
+				INFOPLIST_FILE = SevenAppsCase/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,12 +334,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A9HQBNS9TX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SevenAppsCase/Info.plist;
+				INFOPLIST_FILE = SevenAppsCase/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

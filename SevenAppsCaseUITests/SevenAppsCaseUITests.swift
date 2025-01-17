@@ -2,7 +2,7 @@
 //  SevenAppsCaseUITests.swift
 //  SevenAppsCaseUITests
 //
-//  Created by orphex on 16.01.2025.
+//  Created by Kaan Yeyrek on 17.01.2025.
 //
 
 import XCTest
